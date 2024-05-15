@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f79393;
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #6db3f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0 0 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: white;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea,
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                User Personal Information
+            </legend>
+            <label>
+                Full Name
+            </label>
+            <input type="text" name="name" />
+            <label>
+                Email
+            </label>
+            <input type="email" name="email" />
+            <label
+            >Password
+            </label>
+            <input type="password" name="pass" />
+            <label>
+                Confirm Password
+            </label>
+            <input type="password" name="confirmPass" />
+            <label>
+                Gender
+            </label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+            <input type="radio" name="gender" value="others" />Others
+            <label>
+                Date of Birth
+            </label>
+            <input type="date" name="dob" />
+            <label>
+                Address
+            </label>
+            <textarea name="address" height=500px width=500px></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
+
